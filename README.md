@@ -4,10 +4,11 @@ This repository contains projects  that I did when I took CSE 5311 under Profess
 Implemented two graph search algorithms BFS(Breadth First Search using Queue data structure) and DFS(Depth First Search using Stack data structure) in Python, compared their performances and running time analysis.
 
 Learnings Outcomes:
+
 1.Time Complexity:
 From the plotting and the flow of BFS and DFS, we understood that the
 performance of BFS and DFS are similar as their time complexity is O(V+E).
-● BFS:
+BFS:
 In BFS,each vertex is enqueued and dequeued utmost twice since it is an
 undirected graph.The enqueue and dequeue operations take constant
 amount of time i.e O(1).Hence, the total queue operations would take O(V)
@@ -17,7 +18,7 @@ nodes.The sum of all the adjacency lists is O(E).The total time taken to scan
 the lists is O(E).
 As initialization takes O(V) and scanning takes O(E).The total time
 complexity of BFS is O(V+E).
-● DFS:
+DFS:
 DFS examines each edge at most twice since it is an Undirected graph, one
 from each end of the node and stack supports push and pop operation in
 O(1) time.
@@ -27,11 +28,11 @@ The running time for DFS would be O(m+2n) or O(V+2E) which is ~ O(V+E)
 where n=|V| and m =|E|.
 
 2. Space Complexity:
-● BFS:
+BFS:
 The space complexity of BFS is O(V) as in the worst case it corresponds to
 the maximum number of vertices present in the graph that may be stored in
 the queue.
-● DFS:
+DFS:
 The space complexity of DFS is O(V) as in the worst case it corresponds to
 the maximum number of vertices present in the graph that may be stored in
 the stack.
@@ -46,10 +47,10 @@ The iteration time is captured using the monotonic() function.
 
 
 Challenges faced:
-● Initially we faced some challenges in generating the dataset using a
+- Initially we faced some challenges in generating the dataset using a
 random generator. Later, we studied the Snap.Stanford module for
 generating a large dataset for the graph.
-● While experimenting with the wide range of data (in millions), the
+- While experimenting with the wide range of data (in millions), the
 loading of a huge dataset was taking a little longer time, thus the
 nodes and edges were decreased to thousands and later we generated
 the plotting for the above scenarios.
